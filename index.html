@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generateur de mot de passe</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+
+<div class="container">
+	<div class="container github_p"><a href="#" >Github of the Project</a></div>
+	<h2>Password Generator</h2>
+	<div class="result-container">
+		<span id="result"></span>
+		<button class="btn" id="clipboard">
+			<i class="far fa-clipboard"></i>
+		</button>
+	</div>
+	<div class="settings">
+		<div class="setting">
+			<label>Password length</label>
+			<input type="number" id="length" min='4' max='20' value='20' />
+		</div>
+		<div class="setting">
+			<label>Include uppercase letters</label> 
+			<input type="checkbox" id="uppercase" checked />
+		</div>
+		<div class="setting">
+			<label>Include lowercase letters</label> 
+			<input type="checkbox" id="lowercase" checked />
+		</div>
+		<div class="setting">
+			<label>Include numbers</label> 
+			<input type="checkbox" id="numbers" checked />
+		</div>
+		<div class="setting">
+			<label>Include symbols</label> 
+			<input type="checkbox" id="symbols" checked />
+		</div>
+	</div>
+	<button class="btn btn-large" id="generate">
+		Generate password
+	</button>
+</div>
+
+<!-- SOCIAL PANEL HTML -->
+<div onmouseenter=Enter() onmouseleave=Leave() class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with Love</i> by
+			<a target="_blank" href="https://ziadlahrouni.com">Ziad Lahrouni</a></p>
+		<button class="close-btn"><i class="fas fa-times"></i></button>
+		<h4>Get in touch on</h4>
+		<div class="social-ul">
+			<ul>
+				<li>
+					<a href="https://twitter.com/LahrouniZiad" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/Zlahrouni" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.paypal.com/paypalme/ziadcxk" target="_blank">
+						<i class="fab fa-paypal"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--
+<div class="floating-text">
+	more project in <a href="https://ziadlahrouni.com" target="_blank">ziadlahrouni.com</a>
+</div> -->
+<script src="main.js"></script>
+</body>
+</html>

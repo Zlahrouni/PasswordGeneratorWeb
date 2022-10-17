@@ -89,17 +89,3 @@ function getRandomeSymbol() {
 }
 
 
-// SOCIAL PANEL JS
-const social_panel_container = document.querySelector('.social-panel-container');
-
-
-
-function Enter()
-{
-    social_panel_container.classList.toggle('visible')
-}
-
-function Leave()
-{
-    social_panel_container.classList.remove('visible')
-}

@@ -105,3 +105,11 @@ function Leave()
 {
     social_panel_container.classList.remove('visible')
 }
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visibletel')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visibletel')
+});
